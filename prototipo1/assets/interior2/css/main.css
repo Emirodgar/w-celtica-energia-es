@@ -2093,7 +2093,7 @@ input, select, textarea {
 
 	#header-wrapper {
 		position: relative;
-		padding: 4em 0 2em 0;
+		padding: 4em 0 1em 0;
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed, fixed, fixed;
@@ -2131,15 +2131,17 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	
+
 /* Header */
 
 	#logo {
 		position: absolute;
 		z-index: 1;
 		top: 0;
-		left: 50%;
+		/*left: 50%;
 		width: 15em;
-		margin-left: -7.5em;
+		margin-left: -7.5em;*/
 	}
 
 		#logo a {
@@ -2167,8 +2169,8 @@ input, select, textarea {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 4em;
-		line-height: 4em;
+		height: 5em;
+		line-height: 5em;
 	}
 
 		#nav > ul {
@@ -2389,14 +2391,14 @@ input, select, textarea {
 
 /* Copyright */
 
-	#copyright {
+	/*#copyright {
 		#footer .copyright {
 			font-size: 0.8em;
 			list-style: none;
 			margin: 2em 0 0 0;
 			padding: 0;
 		}
-	}
+	}*/
 
 /* Normal */
 
@@ -3067,4 +3069,10 @@ input, select, textarea {
 				margin-bottom: 1em;
 			}
 
+	}
+
+	ul.icons li {
+		display: inline-block;
+		padding: 0 0.6em 0 0;
+		font-size: 30pt;
 	}

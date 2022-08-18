@@ -6,7 +6,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/interior2/css/main.css" />
+		<link rel="stylesheet" href="assets/css/jquery.roadmap.min.css"/>
 		<link rel="icon" href="images/favicon.svg" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
 	</head>
 	<body class="left-sidebar is-preload">
 		<div id="page-wrapper">
@@ -73,7 +75,13 @@
 												ejerciendo como representante en el mercado diario de electricidad de pequeñas centrales
 												hidráulicas y plantas solares fotovoltaicas.</p>
 										</header>
-										<a href="#" class="image featured"><img src="images/quienes-somos.jpg" alt="" /></a>
+										<!--<a href="#" class="image featured"><img src="images/quienes-somos.jpg" alt="" /></a>-->
+
+										<div id="my-timeline"></div>
+
+
+
+
 										<p>Somos una <b>comercializadora independiente</b> que suministra electricidad a pequeños
 											consumidores industriales, y mantiene todas las plataformas que ponemos a disposición de
 											nuestros clientes. Formamos parte del mercado de futuros de electricidad y gas OMIP, donde
@@ -150,6 +158,85 @@
 			<script src="assets/interior2/js/breakpoints.min.js"></script>
 			<script src="assets/interior2/js/util.js"></script>
 			<script src="assets/interior2/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/jquery-roadmap@1.4.0/src/jquery.roadmap.min.js"></script>
+
+			<script type="text/javascript">
+				var myEvents = [{
+					date: 'Abril - 2011',
+					content: 'Firma del Contrato de Adhesión a OMIE'
+					},{
+					date: 'Julio - 2011',
+					content: 'Registro como comercializadora de electricidad ante CNMC'
+					},
+					{
+					date: 'Agosto - 2011',
+					content: 'Calificación para primeras Subastas CESUR'
+					},
+					{
+					date: 'Septiembre - 2011',
+					content: 'Accionariado OCSUM'
+					},
+					{
+					date: 'Octubre - 2011',
+					content: 'Miembro Negociador por Cuenta Propia de MEFF'
+					},
+					{
+					date: 'Octubre - 2011',
+					content: 'Acceso servicios de Clearing del Banco Santander'
+					},
+					{
+					date: 'Enero - 2012',
+					content: 'Clasificación como cliente profesional de plataformas Broker ICAP'
+					},
+					{
+					date: 'Febrero - 2012',
+					content: 'Acceso mesa TULLETT PREBON para mercados eléctricos españoles'
+					},
+					{
+					date: 'Enero - 2013',
+					content: 'Calificación Subastas Interconexión OMIE y REE para Portugal '
+					},
+					{
+					date: 'Febrero - 2013',
+					content: 'Cliente profesional plataformas Broker TRADITION'
+					},
+					{
+					date: 'Febrero - 2013',
+					content: 'Miembro Negociador por Cuenta Propia de OMIP'
+					},
+					{
+					date: 'Agosto - 2015',
+					content: 'Alta en REMIT'
+					},
+					{
+					date: 'Noviembre - 2015',
+					content: 'Calificación subastas solares OMIP'
+					},
+					{
+					date: 'Desde 2016',
+					content: 'Gestionamos cerca de 400 GWh al año de energía'
+					},
+					{
+					date: 'Desde 2022',
+					content: 'Participamos en la modificación del Estatuto de Consumidores'
+					}
+				];
+
+
+
+				$('#my-timeline').roadmap(myEvents, {
+                eventsPerSlide: 3,
+                slide: 1,
+                prevArrow: '<i class="material-icons">keyboard_arrow_left</i>',
+                nextArrow: '<i class="material-icons">keyboard_arrow_right</i>',
+                onBuild: function() {
+                    console.log('onBuild event')
+                }
+            });
+
+
+
+			</script>
 
 	</body>
 </html>

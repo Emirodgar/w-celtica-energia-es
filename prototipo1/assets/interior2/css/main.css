@@ -2013,6 +2013,8 @@ input, select, textarea {
 		padding: 0.8em 2em 0.8em 2em;
 		cursor: pointer;
 		outline: 0;
+		color: #276599;
+		border-color: #276599;
 	}
 
 		input[type="button"]:hover,
@@ -3169,8 +3171,8 @@ input, select, textarea {
 
 
   .button-cta2{
-	color: #f35858;
-	border-color: #f35858;
+	color: #276599;
+	border-color: #276599;
 	background-color: #fcfcfc;
   }
 

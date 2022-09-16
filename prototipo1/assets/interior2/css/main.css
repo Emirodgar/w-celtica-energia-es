@@ -2372,6 +2372,8 @@ input, select, textarea {
 		border-top: solid 1px #d2d7dc;
 		margin-top: 3em;
 		padding-top: 3em;
+		border-right: 1px #52575c;
+		border-style: dotted;
 	}
 
 		#sidebar section:first-child {
